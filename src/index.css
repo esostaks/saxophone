@@ -75,4 +75,5 @@ button:focus-visible {
 
 .img__active {
   visibility: visible;
+  transform: rotate(40deg);
 }

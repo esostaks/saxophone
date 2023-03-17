@@ -18,25 +18,25 @@ type SaxoKeys = {
     {
       keyCode: 87,
       text: "W",
-      src: "/sounds/cat-meow-2.wav",
+      src: "/sounds/cat-meow-2.mp3",
       img: "/images/img-cat-1.png"
     },
     {
       keyCode: 69,
       text: "E",
-      src: "/sounds/cat-meow-3.wav",
+      src: "/sounds/cat-meow-3.mp3",
       img: "/images/img-cat-4.png"
     },
     {
       keyCode: 82,
       text: "R",
-      src: "/sounds/cat-meow-4.wav", 
+      src: "/sounds/cat-meow-4.mp3", 
       img: "/images/img-cat-3.png"
     },
     {
       keyCode: 84,
       text: "T",
-      src: "/sounds/cat-meow-5.wav",
+      src: "/sounds/cat-meow-5.mp3",
       img: "/images/img-cat-5.png"
     },
   ];
@@ -59,7 +59,6 @@ const Saxophone = () => {
        const audio = document.getElementById(selector) as any
         audio.play()
         setActiveKey(selector)
-        console.log(activeKey)
     }
 
     return (
