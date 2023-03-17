@@ -6,12 +6,18 @@
    background: transparent;
 }
 
- .saxoBox {
+ .saxophone {
    position: relative;
  }
 
  .imageWrapper {
    position: absolute;
-   top: 430px;
-   right: 900px;
+   top: 230px;
+   right: 100px;
+ }
+
+ .keys {
+   display: flex;
+   gap: 10px;
+   flex-direction: column;
  }
