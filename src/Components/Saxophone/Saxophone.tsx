@@ -65,7 +65,7 @@ const Saxophone = () => {
     return (
         <div className="wrapper">
             <div className="saxoBox">
-                <div className="main">
+                <div className={style.main}>
                     <div className={style.keys}>
                         {saxoKeys.map((key) => (
                             <button 
@@ -85,7 +85,7 @@ const Saxophone = () => {
                     <div className={style.saxophone}>
                         <img 
                           className={style.saxo_img} 
-                          src="src/assets/images/img-saxophone.png" 
+                          src="/images/img-saxophone.png" 
                           alt="saxophone"
                           width="1000"
                           height="1000" />
