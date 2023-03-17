@@ -12,32 +12,32 @@ type SaxoKeys = {
     {
       keyCode: 81,
       text: "Q",
-      src: "public/sounds/cat-meow-1.mp3",
-      img: "public/images/img-cat-2.png"
+      src: "/sounds/cat-meow-1.mp3",
+      img: "/images/img-cat-2.png"
     },
     {
       keyCode: 87,
       text: "W",
-      src: "public/sounds/cat-meow-2.wav",
-      img: "public/images/img-cat-1.png"
+      src: "/sounds/cat-meow-2.wav",
+      img: "/images/img-cat-1.png"
     },
     {
       keyCode: 69,
       text: "E",
-      src: "public/sounds/cat-meow-3.wav",
-      img: "public/images/img-cat-4.png"
+      src: "/sounds/cat-meow-3.wav",
+      img: "/images/img-cat-4.png"
     },
     {
       keyCode: 82,
       text: "R",
-      src: "public/sounds/cat-meow-4.wav", 
-      img: "public/images/img-cat-3.png"
+      src: "/sounds/cat-meow-4.wav", 
+      img: "/images/img-cat-3.png"
     },
     {
       keyCode: 84,
       text: "T",
-      src: "public/sounds/cat-meow-5.wav",
-      img: "public/images/img-cat-5.png"
+      src: "/sounds/cat-meow-5.wav",
+      img: "/images/img-cat-5.png"
     },
   ];
 
@@ -89,15 +89,16 @@ const Saxophone = () => {
                           alt="saxophone"
                           width="1000"
                           height="1000" />
-                          <div className={style.imageWrapper}>{saxoKeys.map((key) => (
+                        <div className={style.imageWrapper}>
+                          {saxoKeys.map((key) => (
                           <img 
-                          src={key.img} 
-                          key={key.img}
-                          className={activeKey === key.text ? 'img__active' : 'img_hidden'}
-                          width="350"
-                          height="300"
-                          alt="cat" />
-                        ))}</div>
+                              src={key.img} 
+                              key={key.img}
+                              className={activeKey === key.text ? 'img__active' : 'img_hidden'}
+                              width="350"
+                              height="300"
+                              alt="cat" />
+                          ))}</div>
                         
                     </div>
                 </div>
